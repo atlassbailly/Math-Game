@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx1.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #b3ecff;">
+         <children>
+            <Button fx:id="addButton" layoutX="62.0" layoutY="23.0" mnemonicParsing="false" onAction="#setTypeAddition" style="-fx-background-color: #cccccc;" text="Addition" AnchorPane.bottomAnchor="675.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="subButton" layoutX="92.0" layoutY="251.0" mnemonicParsing="false" onAction="#setTypeSubtraction" style="-fx-background-color: #cccccc;" text="Subtraction" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="mulButton" layoutX="92.0" layoutY="470.0" mnemonicParsing="false" onAction="#setTypeMultiplication" style="-fx-background-color: #cccccc;" text="Multiplication" AnchorPane.bottomAnchor="425.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Slider fx:id="slider" layoutX="48.0" layoutY="630.0" majorTickUnit="5.0" max="25.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" value="2.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="600.0" />
+            <Button fx:id="start" layoutX="92.0" layoutY="698.0" mnemonicParsing="false" onAction="#newQuestions" style="-fx-background-color: #cccccc;" text="Start Quiz" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="700.0">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="divButton" layoutX="92.0" layoutY="387.0" mnemonicParsing="false" onAction="#setTypeDivision" style="-fx-background-color: #cccccc;" text="Division" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="375.0">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #b3ecff;">
+         <children>
+            <Label fx:id="questionBox" alignment="CENTER" contentDisplay="CENTER" layoutX="271.0" layoutY="135.0" text="&quot;Question Box&quot;" textAlignment="CENTER" AnchorPane.bottomAnchor="625.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font size="48.0" />
+               </font></Label>
+            <TextField fx:id="answerBox" layoutX="204.0" layoutY="399.0" onAction="#guess" onMouseClicked="#clearAnswerBox" text="&quot;Answer Box&quot;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="400.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label fx:id="stats" alignment="TOP_LEFT" layoutX="110.0" layoutY="110.0" lineSpacing="1.0" style="-fx-background-color: #c7e7ff;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="500.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
